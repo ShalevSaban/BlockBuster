@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "1234",
-  "db": "vidly_db"
+  "db": "mongodb://127.0.0.1/vidly_tests"
 }

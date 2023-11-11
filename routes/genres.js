@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.use(express.json());
 
-router.get("/", control, async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   try {
     const genres = await Genre.find().sort("name");
     return res.send(genres);

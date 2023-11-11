@@ -1,5 +1,10 @@
 function controlFunction(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+  try {
+    res.header("Access-Control-Allow-Origin", "*");
+  } catch (ex) {
+    next(ex);
+  }
+
   // const allowedOrigins = [
   //   "http://localhost:5173",
   //   "https://bluckbuster.onrender.com",
@@ -14,6 +19,7 @@ function controlFunction(req, res, next) {
   // );
   // res.header("Access-Control-Allow-credentials", true);
   // res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, UPDATE");
+  next();
 }
 
 module.exports.control = controlFunction;

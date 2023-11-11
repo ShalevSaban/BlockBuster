@@ -14,7 +14,6 @@ function controlFunction(req, res, next) {
   // );
   // res.header("Access-Control-Allow-credentials", true);
   // res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, UPDATE");
-  next();
 }
 
 module.exports.control = controlFunction;

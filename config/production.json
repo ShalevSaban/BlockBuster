@@ -1,4 +1,4 @@
 {
-  "jwtPrivateKey": "vidly_jwtPrivateKey",
-  "db": "blockBuster_db"
+  "jwtPrivateKey": "1234",
+  "db": "mongodb+srv://admin-shalev:Shalev1213@bluckbuster.9gsbrf3.mongodb.net/?retryWrites=true&w=majority"
 }

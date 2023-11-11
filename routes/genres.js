@@ -1,7 +1,6 @@
 const validateObjectId = require("../middleware/validateObjectId");
 const { auth } = require("../middleware/auth");
 const { admin } = require("../middleware/admin");
-const { control } = require("../middleware/control");
 
 const { Genre, validate } = require("../models/genre");
 const express = require("express");

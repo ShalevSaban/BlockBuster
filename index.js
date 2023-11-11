@@ -8,6 +8,7 @@ require("./startup/db")();
 require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
+require("./startup/cors")(app);
 
 const port = process.env.PORT || 3000;
 
@@ -16,5 +17,3 @@ const server = app.listen(port, () =>
 );
 
 module.exports = server;
-
-//"db": "mongodb://127.0.0.1/vidly_tests"
